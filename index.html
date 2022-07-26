@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body id="body">
+    <form action="results.html" method="GET">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required max="12">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required max="12">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required minlength="40">
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" required min="1" step="1">
+    </div>
+    <div>
+        <label for="date">Date Of Birth</label>
+        <input type="date" name="date" id="date" required min="01-01-2021">
+    </div>
+    <div>
+        <label for="phone" >Phone</label>
+        <input type="number" name="phone" id="phone">    
+    </div>
+    <div>
+        Gender
+    <div>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+    </div>
+    <div>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+    </div>
+    </div>
+    <div>
+        <label for="language">language you know</label>
+        <select multiple name="language" id="language">
+            <option label="html" value="HTML"></option>
+            <option label="CSS" value="CSS"></option>
+            <option label="Java-Script" value="Java-Script"></option>
+            <option label="Python" value="Python"></option>
+            <option label="Django" value="Django"></option>
+            <option label="MongoDb" value="MongoDb"></option>
+            <option label="Nodejs" value="Nodejs"></option>
+
+        </select>
+    
+    </div>
+    <div> 
+        <label for="text">Write about your hobbies</label>
+        <textarea name="hobbies" id="text" cols="30" rows="10" placeholder="write here...."></textarea>
+    </div>
+
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </form>
+    
+
+</body>
+</html>
